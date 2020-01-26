@@ -6,7 +6,7 @@ const config = require('./config/database');
 const loginRoutes = require('./routes/auth');
 const detailRoutes = require('./routes/detail');
 const app = express();
-
+ 
 mongoose.connect(config.database,{useNewUrlPaser: true})
 .then(() => {
 	console.log('Connected to database');
